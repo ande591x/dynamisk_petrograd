@@ -121,31 +121,42 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
+            <template id="produkt_template">
+                <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
 
 
 
-                <!--- produkter--->
+                    <!--- produkter--->
 
-                <div class="container-produkt">
+                    <div class="container-produkt">
 
-                    <img class="imgprodukt" src="imgs/medium/baltiskbondesuppe-md.jpg" alt="none">
-                    <div class="textbox">
-                        <p class="text">
-                            <button type="button" class="btn-transparent btn-block" data-toggle="modal" data-target="#myModal1">
-                                <span>Baltisk Bondesuppe</span>
-                                <span>Baltisk bondesuppe - en solid starter
-</span>
-                                <span>79kr.-</span>
-                            </button>
+                        <img class="imgprodukt data_billede" src="imgs/medium/baltiskbondesuppe-md.jpg" alt="none">
+                        <div class="textbox">
+                            <p class="text">
+                                <button type="button" class="btn-transparent btn-block" data-toggle="modal" data-target="#myModal1">
+                                    <h1 class="data_navn">DATA_NAVN</h1>
+                                    <h2 class="data_kortbeskrivelse">DATA_KORTBESKRIVELSE
+                                </h2>
+                                    <h2 class="udsolgtekst">Denne vare er desværre udsolgt</h2>
+                                    <!-- skal kun vises når varen er udsolg-->
+                                    <h2 class="pris"><span class="data_pris">DATA_PRIS</span>.-</h2>
+                                    <!--
+                                   TODO:   sæt udsolgt class ved udsolgt sæt class rabat ved rabat-->
+                                    <h2 class="rabatpris">Rabat:<span class="data_rabat">DATA_RABAT</span>.-</h2>
+                                    <!--                           skal kun vises ved rabat-->
+                                </button>
 
-                        </p>
+                            </p>
+                        </div>
+
+
+
                     </div>
-
-
-
                 </div>
-            </div>
+
+            </template>
+
+            <!--            produkt2-->
             <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
 
 
@@ -189,6 +200,7 @@
             </div>
         </div>
     </div>
+
     <!-- / container -->
     <div class="container-fluid" style="padding-top:15px;">
         <div class="row">
