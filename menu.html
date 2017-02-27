@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" media="screen" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Starter Template</title>
+    <title>Petrograd</title>
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,84 +22,89 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="background-color: #f8f8f8;">
 
-    <nav class="navbar navbar-index navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand navbar-index" href="#">Resturant Petrogad</a>
+    <header>
+        <nav class="navbar navbar-index navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbar-index" href="/dynamisk_petrograd/index.html">Restaurant Petrogad</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="navbar-index" href="/dynamisk_petrograd/index.html">Hjem</a></li>
+                        <li><a class="navbar-index" href="/dynamisk_petrograd/menu.html">Menu</a></li>
+                        <li><a class="navbar-index" href="/dynamisk_petrograd/contact.html">Om</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
             </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a class="navbar-index" href="#">Home</a></li>
-                    <li><a class="navbar-index" href="#contact">Menu</a></li>
-                    <li><a class="navbar-index" href="#about">About</a></li>
-                    <li><a class="navbar-index" href="#contact">Contact</a></li>
-                </ul>
+        </nav>
+
+
+        <!-- / banner container -->
+        <div class="container-fluid  clickr ">
+            <div class="row">
+                <div class="col-md-12 bannerfrontpage">
+
+                </div>
             </div>
-            <!--/.nav-collapse -->
         </div>
-    </nav>
-    <!-- / banner container -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 bannerfrontpage">
+        <!-- / banner container END -->
+        <!--    <aside class="q-question ">-->
+        <nav class="navbar navbar-menu navbar-default" style="margin-bottom:5px;">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Menu</a>
+                </div>
 
-            </div>
-        </div>
-    </div>
-    <!-- / banner container END -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" style="margin-bottom:0px;">
+                        <li class="active"><a href="#forret">Forretter <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#hovedret">Hovedretter</a></li>
+                        <li><a href="#dessert">Desserter</a></li>
+                        <li><a href="#drikkevarer">Drikkevarer</a></li>
+                        <li><a href="#sideorder">Sideorders</a></li>
 
-    <nav class="navbar navbar-menu navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Menu</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" style="margin-bottom:0px;">
-                    <li class="active"><a href="#">Foretter <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Hovedretter</a></li>
-                    <li><a href="#">Desserter</a></li>
-                    <li><a href="#">Drikkevarer</a></li>
-                    <li><a href="#">Sideorders</a></li>
 
-                    <!--  <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
+                    </ul>
 
--->
+                    <ul class="nav navbar-nav navbar-left " style="margin-bottom:0px;">
+
+                        <li class="filterknap_vegetar"><a>Vegetar - <input type="checkbox"  data-toggle="toggle" data-size="mini"></a>
+
+                        </li>
+
+                        <li class="filterknap_udsolgt"><a>Udsolgt - <input type="checkbox"  data-toggle="toggle" data-size="mini"></a></li>
+                        <li class="filterknap_rabatsats"><a>Tilbud - <input type="checkbox"  data-toggle="toggle" data-size="mini"></a></li>
+                        <li class="filterknap_alkoholprocent"><a>Alkohol - <input type="checkbox" checked data-toggle="toggle" data-size="mini"></li>
+
+
+
 
                 </ul>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
+                  <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -105,161 +112,197 @@
     </nav>
 
 
-    <!-- / banner container -->
-
-    <!-- /container ret header -->
+    <!-- / header-->
+</header>
+    <!-- /body -->
 
 
 
     <!-- / container menu -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="page-header">Forretter</h1>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
+
+    <div class="container-fluid" style=" margin-left: 5px;margin-right: 5px;">
         <div class="row produktliste">
             <template id="produkt_template">
-                <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
-
-
-
+                <div class="col-md-4 produkt" style="padding-left:0px;padding-right:0px;">
                     <!--- produkter--->
-
                     <div class="container-produkt">
 
-                        <img class="imgprodukt data_billede" src="imgs/medium/baltiskbondesuppe-md.jpg" alt="none">
-                        <div class="textbox">
-                            <p class="text">
-                                <button type="button" class="btn-transparent btn-block" data-toggle="modal" data-target="#myModal1">
-                                    <h1 class="data_navn">DATA_NAVN</h1>
-                                    <h2 class="data_kortbeskrivelse">DATA_KORTBESKRIVELSE
-                                </h2>
-                                    <h2 class="udsolgtekst">Denne vare er desværre udsolgt</h2>
-                                    <!-- skal kun vises når varen er udsolg-->
-                                    <h2 class="pris"><span class="data_pris">DATA_PRIS</span>.-</h2>
-                                    <!--
-                                   TODO:   sæt udsolgt class ved udsolgt sæt class rabat ved rabat-->
-                                    <h2 class="rabatpris">Rabat:<span class="data_rabat">DATA_RABAT</span>.-</h2>
-                                    <!--                           skal kun vises ved rabat-->
-                                </button>
 
-                            </p>
+                        <img class="imgprodukt data_billede" src="imgs/medium/baltiskbondesuppe-md.jpg" alt="none" style="z-index:1">
+                        <div class="textbox">
+
+
+                            <button class="text modalknap btn-transparent" data-toggle="modal" data-target="#myModal">
+
+                                <h1 class="data_navn" style="pointer-events: none;">DATA_NAVN</h1>
+
+                                <h2 class="udsolgtekst" style="pointer-events: none;">Denne vare er desværre udsolgt</h2>
+                                <!-- skal kun vises når varen er udsolg-->
+                                <h2 class="pris"><span class="data_pris" style="pointer-events: none;">DATA_PRIS</span>.-</h2>
+                                <!--
+                                   TODO:   sæt udsolgt class ved udsolgt sæt class rabat ved rabat-->
+                                <h2 class="rabatpris" style="pointer-events: none;">Rabat:<span class="data_rabat" style="pointer-events: none;">DATA_RABAT</span>.-</h2>
+                                <!--                           skal kun vises ved rabat-->
+                            </button>
                         </div>
 
 
 
                     </div>
                 </div>
-
             </template>
+        </div>
+        <div class="row forretterliste" id="forret">
+            <div class="col-md-12">
 
-            <!--            produkt2-->
-            <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
-
-
-
-                <!--- produkter--->
-
-                <div class="container-produkt ">
-                    <img class="imgprodukt" src="imgs/medium/bochkarev-md.jpg" alt="none">
-                    <div class="textbox">
-                        <p class="text">
-                            <button type="button" class="btn-transparent btn-block" data-toggle="modal" data-target="#myModal2">
-                                <span>Bochkarev fadøl</span>
-                                <span>En halv liter Bochkarev fadøl</span>
-                                <span>55kr.-</span>
-                            </button>
-                        </p>
-                    </div>
-
-                </div>
+                <h1>Forretter</h1>
+                <hr>
             </div>
+        </div>
+        <div class="row hovedretliste" id="hovedret">
+            <div class="col-md-12">
+                 <hr>
+                <h1>Hovedretter</h1>
+                 <hr>
+            </div>
+        </div>
+        <div class="row dessertliste" id="dessert">
+            <div class="col-md-12">
+                 <hr>
+                <h1>Desserter</h1>
+                 <hr>
+            </div>
+        </div>
+        <div class="row drikkevarerliste" id="drikkevarer">
+            <div class="col-md-12">
+                 <hr>
+                <h1>Drikkevarer</h1>
+                 <hr>
+            </div>
+        </div>
+        <div class="row sideordersliste" id="sideorder" style="margin-bottom:75px">
+            <div class="col-md-12">
+                 <hr>
+                <h1>Sideorders</h1>
+                 <hr>
+            </div>
+        </div </div>
+        <!-- det er her min modal_template skal være -->
 
-            <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
+        <!-- Modal slut -->
+
+        <!--            produkt2-->
 
 
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
 
-
-                <!--- produkter--->
-
-                <div class="container-produkt">
-                    <img class=" imgprodukt" src="imgs/medium/boef-md.jpg" alt="none">
-                    <div class="textbox">
-                        <p class="text">
-                            <button type="button" class="btn-transparent btn-block" data-toggle="modal" data-target="#myModal3">
-                                <span>Diplomat-bøf med grønt</span>
-                                <span></span>
-                                <span>179kr.-</span>
-                            </button>
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- / container -->
-    <div class="container-fluid" style="padding-top:15px;">
-        <div class="row">
-            <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
-                <div class="container-produkt">
-
-                    <img class="imgprodukt" src="imgs/medium/baltiskbondesuppe-md.jpg" alt="none">
-                    <div class="textbox">
-                        <p class="text">
-                            <span>Baltisk Bondesuppe</span>
-                            <span>Baltisk bondesuppe - en solid starter
-</span>
-                            <span>79kr.-</span>span
-                        </p>
-                    </div>
-                </div>
+        <template id="modal_template">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title data_navn">DATA_NAVN</h1>
             </div>
-            <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
-                <div class="container-produkt ">
-                    <img class="imgprodukt" src="imgs/medium/bochkarev-md.jpg" alt="none">
-                    <div class="textbox">
-                        <p class="text">
-                            <span>Bochkarev fadøl</span>
-                            <span>En halv liter Bochkarev fadøl</span>
-                            <span>55kr.-</span>
-                        </p>
-                    </div>
+            <div class="modal-body">
 
-                </div>
-            </div>
+                <img class="imgprodukt data_billede" src="imgs/medium/baltiskbondesuppe-md.jpg" alt="none">
+                <p class="data_langbeskrivelse">DATA_BESKRIVELSE</p>
+                <span class="data_oprindelse">DATA_OPRINDELSE </span>
+                <span class="data_langbeskrivelse">DATA_BESKRIVELSE </span>
 
-            <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
-                <div class="container-produkt">
-                    <img class=" imgprodukt" src="imgs/medium/boef-md.jpg" alt="none">
-                    <div class="textbox">
-                        <p class="text">
-                            <span>Diplomat-bøf med grønt</span>
-                            <span></span>
-                            <span>179kr.-</span>
-                        </p>
-                    </div>
-                </div>
+
             </div>
+            <div class="modal-footer">
+                <h2 class="pris"> Pris:<span class="data_pris">DATA_PRIS</span>.-</h2>
+                <button type="button" class="btn btn-primary">Køb</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Luk</button>
+            </div>
+        </template>
         </div>
-    </div>
-    <!-- / container -->
-    <!-- / banner container -->
-    <!-- / banner container -->
-    <!-- / banner container -->
-    <!-- / banner container -->
-    <!-- / banner container -->
-    <!-- / banner container -->
-    <!-- / banner container -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <!-- / container -->
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+
+            <div class="col-lg-9  col-md-9 col-sm-9 col-xs-6">
+                <h3> Hvem er vi?</h3>
+                 <p>Resturant Petrograd - Jægersborggade 35, 2200 København
+                 </p>
+                 <p>
+                Telefon: 12345678 - Mandag-Fredag: 11-22 - Lørdag: 10-22 </p>
+            </div>
+            <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                <h3> Kontakt </h3>
+                <ul>
+                    <li>
+                        <div class="input-append newsletter-box text-center">
+                            <input type="text" class="full text-center" placeholder="Email ">
+                            <button class="btn  bg-gray" type="button"> Send <i class="fa fa-long-arrow-right"> </i> </button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="social">
+                    <li>
+                        <a href="#"> <i class=" fa fa-facebook">   </i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-twitter">   </i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-google-plus">   </i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-pinterest">   </i> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-youtube">   </i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row-->
+            </div>
+            <!--/.container-->
+            </div>
+            <!--/.footer-->
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="pull-left"> Copyright © 2014. All right reserved. </p>
+                    <div class="pull-right">
+                        <ul class="nav nav-pills payments">
+                            <li><i class="fa fa-cc-visa"></i></li>
+                            <li><i class="fa fa-cc-mastercard"></i></li>
+                            <li><i class="fa fa-cc-amex"></i></li>
+                            <li><i class="fa fa-cc-paypal"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </footer>
+            <!--/.footer-bottom-->
+
+            <!-- / container -->
+            <!-- / banner container -->
+            <!-- / banner container -->
+            <!-- / banner container -->
+            <!-- / banner container -->
+            <!-- / banner container -->
+            <!-- / banner container -->
+            <!-- / banner container -->
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+            <script src="script.js"></script>
 
 
 </body>
